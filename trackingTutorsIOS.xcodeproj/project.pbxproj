@@ -108,7 +108,6 @@
 		6F5880B7217114A20040DB83 = {
 			isa = PBXGroup;
 			children = (
-				6F5880F821711B890040DB83 /* Image */,
 				6F5880C2217114A20040DB83 /* trackingTutorsIOS */,
 				6F5880D7217114A40040DB83 /* trackingTutorsIOSTests */,
 				6F5880E2217114A40040DB83 /* trackingTutorsIOSUITests */,
@@ -131,6 +130,7 @@
 		6F5880C2217114A20040DB83 /* trackingTutorsIOS */ = {
 			isa = PBXGroup;
 			children = (
+				6F5880F821711B890040DB83 /* Image */,
 				6F5880F521711B630040DB83 /* Main.storyboard */,
 				6F5880F1217118050040DB83 /* awsconfiguration.json */,
 				6F5880C3217114A20040DB83 /* AppDelegate.swift */,
@@ -166,7 +166,8 @@
 				6F5880F921711BA30040DB83 /* CoachAthletes.jpg */,
 				6F5880FA21711BA30040DB83 /* locationPin.png */,
 			);
-			path = Image;
+			name = Image;
+			path = ../Image;
 			sourceTree = "<group>";
 		};
 		B0C033684FFF551927E5FC86 /* Pods */ = {
