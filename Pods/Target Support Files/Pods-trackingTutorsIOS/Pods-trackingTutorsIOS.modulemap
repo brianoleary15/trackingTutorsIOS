@@ -1,0 +1,6 @@
+framework module Pods_trackingTutorsIOS {
+  umbrella header "Pods-trackingTutorsIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
