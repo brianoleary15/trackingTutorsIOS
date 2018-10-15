@@ -13,9 +13,9 @@
 		6F5880CE217114A30040DB83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5880CC217114A30040DB83 /* LaunchScreen.storyboard */; };
 		6F5880D9217114A40040DB83 /* trackingTutorsIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5880D8217114A40040DB83 /* trackingTutorsIOSTests.swift */; };
 		6F5880E4217114A40040DB83 /* trackingTutorsIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5880E3217114A40040DB83 /* trackingTutorsIOSUITests.swift */; };
-		6F5880F721711B630040DB83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5880F521711B630040DB83 /* Main.storyboard */; };
 		6F58810021712AAD0040DB83 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 6F5880FF21712AAD0040DB83 /* image */; };
 		6F58810221712ACC0040DB83 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F58810121712ACC0040DB83 /* awsconfiguration.json */; };
+		6F5E8875217532890034F975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5E8873217532890034F975 /* Main.storyboard */; };
 		8889600A5FC212288F8EF3DF /* Pods_trackingTutorsIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF36DE36F95342017780471 /* Pods_trackingTutorsIOSTests.framework */; };
 		B83462BCA8E05A64A2D019D4 /* Pods_trackingTutorsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049537924F39DEC51C85E1CE /* Pods_trackingTutorsIOS.framework */; };
 		EC46D49F0D1FBB8F2DEF079E /* Pods_trackingTutorsIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEB496B1FC8556B279B89A5 /* Pods_trackingTutorsIOSUITests.framework */; };
@@ -54,9 +54,9 @@
 		6F5880DF217114A40040DB83 /* trackingTutorsIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trackingTutorsIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5880E3217114A40040DB83 /* trackingTutorsIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingTutorsIOSUITests.swift; sourceTree = "<group>"; };
 		6F5880E5217114A40040DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F5880F621711B630040DB83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/tutorTrackingIOS-master/tutorTracking/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		6F5880FF21712AAD0040DB83 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		6F58810121712ACC0040DB83 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		6F5E8874217532890034F975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8288FD71F4E8ED50A803E654 /* Pods-trackingTutorsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trackingTutorsIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-trackingTutorsIOS/Pods-trackingTutorsIOS.release.xcconfig"; sourceTree = "<group>"; };
 		A561A4A0212DF49064CCC245 /* Pods-trackingTutorsIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trackingTutorsIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-trackingTutorsIOSTests/Pods-trackingTutorsIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABEB496B1FC8556B279B89A5 /* Pods_trackingTutorsIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trackingTutorsIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,9 +128,9 @@
 		6F5880C2217114A20040DB83 /* trackingTutorsIOS */ = {
 			isa = PBXGroup;
 			children = (
+				6F5E8873217532890034F975 /* Main.storyboard */,
 				6F58810121712ACC0040DB83 /* awsconfiguration.json */,
 				6F5880FF21712AAD0040DB83 /* image */,
-				6F5880F521711B630040DB83 /* Main.storyboard */,
 				6F5880C3217114A20040DB83 /* AppDelegate.swift */,
 				6F5880C5217114A20040DB83 /* ViewController.swift */,
 				6F5880CA217114A30040DB83 /* Assets.xcassets */,
@@ -279,8 +279,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F5880F721711B630040DB83 /* Main.storyboard in Resources */,
 				6F58810221712ACC0040DB83 /* awsconfiguration.json in Resources */,
+				6F5E8875217532890034F975 /* Main.storyboard in Resources */,
 				6F58810021712AAD0040DB83 /* image in Resources */,
 				6F5880CE217114A30040DB83 /* LaunchScreen.storyboard in Resources */,
 				6F5880CB217114A30040DB83 /* Assets.xcassets in Resources */,
@@ -456,10 +456,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		6F5880F521711B630040DB83 /* Main.storyboard */ = {
+		6F5E8873217532890034F975 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6F5880F621711B630040DB83 /* Base */,
+				6F5E8874217532890034F975 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
