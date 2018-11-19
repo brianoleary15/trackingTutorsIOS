@@ -15,17 +15,13 @@ import QuartzCore
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
-    @IBOutlet weak var longitude: UILabel!
-    @IBOutlet weak var latitude: UILabel!
-    @IBOutlet weak var tutoringCenterStatus: UILabel!
+    let URL_GET_LISTINGS = "http://localhost:8000/api/event/get/"
     
-    @IBOutlet weak var notifyLabel: UILabel!
+    var user:[User]?
     
-    @IBOutlet weak var notifyButton: UIButton!
+    @IBOutlet weak var signOutButton: UIButton!
     
     var locationManager:CLLocationManager!
-    
-
     
     func showSignIn() {
         if !AWSSignInManager.sharedInstance().isLoggedIn {
@@ -37,6 +33,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                                             print("Error occurred: \(String(describing: error))")
                                         } else {
                                             // Sign in successful.
+                                            
                                         }
                 })
         }
@@ -46,20 +43,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         if !AWSSignInManager.sharedInstance().isLoggedIn {
-            showSignIn()
+            presentAuthUIViewController()
         }
-        
         determineMyCurrentLocation()
         setNeedsStatusBarAppearanceUpdate()
-        
-        tutoringCenterStatus.layer.masksToBounds = true
-        tutoringCenterStatus.layer.cornerRadius=6
-        
-        notifyButton.alpha = 0.5
-        //notifyButton.setTitleColor(UIColor.gray, for: .disabled)
-        notifyLabel.layer.masksToBounds = true
-        notifyLabel.layer.cornerRadius=6
-        notifyLabel.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        print("Signed in Good")
+        self.getJsonOfOneUser()
+        print("Sign in done")
     }
     
     func determineMyCurrentLocation() {
@@ -72,15 +62,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.startUpdatingLocation()
             //locationManager.startUpdatingHeading()
         }
+        print("Done!")
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation:CLLocation = locations[0] as CLLocation
         
         print("user latitude = \(userLocation.coordinate.latitude)")
-        latitude.text = "\(userLocation.coordinate.latitude)"
         print("user longitude = \(userLocation.coordinate.longitude)")
-        longitude.text = "\(userLocation.coordinate.longitude)"
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
@@ -88,14 +77,60 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         print("Error \(error)")
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+    func presentAuthUIViewController() {
+        let config = AWSAuthUIConfiguration()
+        config.enableUserPoolsUI = true
+        config.backgroundColor = UIColor.white
+        config.font = UIFont (name: "Helvetica Neue", size: 12)
+        config.isBackgroundColorFullScreen = true
+        config.canCancel = true
+        config.logoImage = UIImage(named: "AthleteJail")
+        
+        AWSAuthUIViewController.presentViewController(
+            with: self.navigationController!,
+            configuration: config, completionHandler: { (provider: AWSSignInProvider, error: Error?) in
+                if error == nil {
+                    // SignIn succeeded.
+                } else {
+                    // end user faced error while loggin in, take any required action here.
+                }
+        })
     }
     
-    
-    @IBAction func notifyButtonPressed(_ sender: UIButton) {
-        print("Button clicked")
+    @IBAction func signOut(_ sender: Any) {
+        AWSSignInManager.sharedInstance().logout(completionHandler: {(result: Any?, error: Error?) in
+            
+            // Note: The showSignIn() method used below was added by us previously while integrating the sign-in UI.
+            self.presentAuthUIViewController()
+        })
     }
     
+    func getJsonOfOneUser(){
+        
+        let urlString = URL_GET_LISTINGS + "test"
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+            guard let data = data else { return }
+            //Implement JSON decoding and parsing
+            do {
+                //Decode retrived data with JSONDecoder and assing type of User object
+                let userData = try JSONDecoder().decode([User].self, from: data)
+                //Get back to the main queue
+                DispatchQueue.main.async {
+                    self.user = userData
+                    print(self.user)
+                }
+                
+            } catch let jsonError {
+                print(jsonError)
+            }
+            }.resume()
+        print(self.user?.count)
+    }
 }
 

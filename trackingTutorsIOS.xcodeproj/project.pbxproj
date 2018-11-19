@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F08C14E21A2365800162A2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F08C14D21A2365800162A2F /* User.swift */; };
+		6F0B6AFE218CA5D3007E369F /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F0B6AFD218CA5D3007E369F /* LemonMilk.otf */; };
+		6F21F162218C982D000E7D56 /* AthleteJail.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F21F161218C982D000E7D56 /* AthleteJail.png */; };
 		6F5880C4217114A20040DB83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5880C3217114A20040DB83 /* AppDelegate.swift */; };
 		6F5880C6217114A20040DB83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5880C5217114A20040DB83 /* ViewController.swift */; };
 		6F5880CB217114A30040DB83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5880CA217114A30040DB83 /* Assets.xcassets */; };
@@ -14,8 +17,8 @@
 		6F5880D9217114A40040DB83 /* trackingTutorsIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5880D8217114A40040DB83 /* trackingTutorsIOSTests.swift */; };
 		6F5880E4217114A40040DB83 /* trackingTutorsIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5880E3217114A40040DB83 /* trackingTutorsIOSUITests.swift */; };
 		6F58810021712AAD0040DB83 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 6F5880FF21712AAD0040DB83 /* image */; };
-		6F58810221712ACC0040DB83 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F58810121712ACC0040DB83 /* awsconfiguration.json */; };
 		6F5E8875217532890034F975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5E8873217532890034F975 /* Main.storyboard */; };
+		6F9606C9219CFD4900C1650C /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F9606C8219CFD4900C1650C /* awsconfiguration.json */; };
 		8889600A5FC212288F8EF3DF /* Pods_trackingTutorsIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF36DE36F95342017780471 /* Pods_trackingTutorsIOSTests.framework */; };
 		B83462BCA8E05A64A2D019D4 /* Pods_trackingTutorsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049537924F39DEC51C85E1CE /* Pods_trackingTutorsIOS.framework */; };
 		EC46D49F0D1FBB8F2DEF079E /* Pods_trackingTutorsIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEB496B1FC8556B279B89A5 /* Pods_trackingTutorsIOSUITests.framework */; };
@@ -42,6 +45,9 @@
 		049537924F39DEC51C85E1CE /* Pods_trackingTutorsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trackingTutorsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07525F6782669A16C848309B /* Pods-trackingTutorsIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trackingTutorsIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trackingTutorsIOSUITests/Pods-trackingTutorsIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0ACED918DBC8B55F1563659B /* Pods-trackingTutorsIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trackingTutorsIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trackingTutorsIOSTests/Pods-trackingTutorsIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F08C14D21A2365800162A2F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6F0B6AFD218CA5D3007E369F /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
+		6F21F161218C982D000E7D56 /* AthleteJail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AthleteJail.png; sourceTree = "<group>"; };
 		6F5880C0217114A20040DB83 /* trackingTutorsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trackingTutorsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5880C3217114A20040DB83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F5880C5217114A20040DB83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +61,8 @@
 		6F5880E3217114A40040DB83 /* trackingTutorsIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackingTutorsIOSUITests.swift; sourceTree = "<group>"; };
 		6F5880E5217114A40040DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F5880FF21712AAD0040DB83 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
-		6F58810121712ACC0040DB83 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		6F5E8874217532890034F975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F9606C8219CFD4900C1650C /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		8288FD71F4E8ED50A803E654 /* Pods-trackingTutorsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trackingTutorsIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-trackingTutorsIOS/Pods-trackingTutorsIOS.release.xcconfig"; sourceTree = "<group>"; };
 		A561A4A0212DF49064CCC245 /* Pods-trackingTutorsIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trackingTutorsIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-trackingTutorsIOSTests/Pods-trackingTutorsIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABEB496B1FC8556B279B89A5 /* Pods_trackingTutorsIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trackingTutorsIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,9 +109,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6F08C14C21A2364600162A2F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6F08C14D21A2365800162A2F /* User.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		6F21F160218C969D000E7D56 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		6F5880B7217114A20040DB83 = {
 			isa = PBXGroup;
 			children = (
+				6F21F160218C969D000E7D56 /* images */,
 				6F5880C2217114A20040DB83 /* trackingTutorsIOS */,
 				6F5880D7217114A40040DB83 /* trackingTutorsIOSTests */,
 				6F5880E2217114A40040DB83 /* trackingTutorsIOSUITests */,
@@ -128,12 +150,15 @@
 		6F5880C2217114A20040DB83 /* trackingTutorsIOS */ = {
 			isa = PBXGroup;
 			children = (
+				6F08C14C21A2364600162A2F /* models */,
+				6F9606C8219CFD4900C1650C /* awsconfiguration.json */,
 				6F5E8873217532890034F975 /* Main.storyboard */,
-				6F58810121712ACC0040DB83 /* awsconfiguration.json */,
+				6F0B6AFD218CA5D3007E369F /* LemonMilk.otf */,
 				6F5880FF21712AAD0040DB83 /* image */,
 				6F5880C3217114A20040DB83 /* AppDelegate.swift */,
 				6F5880C5217114A20040DB83 /* ViewController.swift */,
 				6F5880CA217114A30040DB83 /* Assets.xcassets */,
+				6F21F161218C982D000E7D56 /* AthleteJail.png */,
 				6F5880CC217114A30040DB83 /* LaunchScreen.storyboard */,
 				6F5880CF217114A30040DB83 /* Info.plist */,
 			);
@@ -279,7 +304,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F58810221712ACC0040DB83 /* awsconfiguration.json in Resources */,
+				6F0B6AFE218CA5D3007E369F /* LemonMilk.otf in Resources */,
+				6F9606C9219CFD4900C1650C /* awsconfiguration.json in Resources */,
+				6F21F162218C982D000E7D56 /* AthleteJail.png in Resources */,
 				6F5E8875217532890034F975 /* Main.storyboard in Resources */,
 				6F58810021712AAD0040DB83 /* image in Resources */,
 				6F5880CE217114A30040DB83 /* LaunchScreen.storyboard in Resources */,
@@ -413,6 +440,7 @@
 			files = (
 				6F5880C6217114A20040DB83 /* ViewController.swift in Sources */,
 				6F5880C4217114A20040DB83 /* AppDelegate.swift in Sources */,
+				6F08C14E21A2365800162A2F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
